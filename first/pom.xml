@@ -27,6 +27,11 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+			<dependency>
+	    <groupId>com.docusign</groupId>
+	    <artifactId>docusign-esign-java</artifactId>
+	    <version>3.18.0</version>
+	   		</dependency>
 	</dependencies>
 
 	<build>
