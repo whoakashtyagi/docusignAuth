@@ -26,6 +26,11 @@ public class Controller {
 		return dsAuthService.generateOauthURI();
 	}
 	
+	@GetMapping("/ds/auth/jwt")
+	public String generateJwtToken(@RequestParam String email) throws ApiException, IOException, Exception {
+		return dsAuthService.generateJwtToken(email);
+	}
+	
 	@GetMapping("/code")
 	public OAuthToken generateToken(@RequestParam String code) throws ApiException, IOException {
 		return dsAuthService.generateToken(code);
